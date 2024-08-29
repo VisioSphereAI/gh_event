@@ -3,9 +3,6 @@ print("Hello")
 print("Bye")
 import numpy as np
 print(np.random.rand(3,3))
-
-print("Hi")
-
 class A:
     def __init__(self):
         print("A")
