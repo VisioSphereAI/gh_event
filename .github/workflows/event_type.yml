@@ -12,6 +12,8 @@ on:
       - main
       - 'dev-*' # add branches start with dev, dev-new, dev-test
       - 'feat/**' # add feat/new, feat/test
+    paths-ignore:
+      - '.github/workflows/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
