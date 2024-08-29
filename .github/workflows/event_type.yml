@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, closed]
   
-  worlflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   deploy:
