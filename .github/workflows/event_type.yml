@@ -16,5 +16,5 @@ jobs:
         with:
           python-version: '3.10' 
         run: pip install opencv-python
-      - uses: check python version
+      - name: check python version
         run: python --version
