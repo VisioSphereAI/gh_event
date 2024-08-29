@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     runs_on: ubuntu_latest
-    setps:
+    steps:
       - name: josn event
         run: echo "run ${{toJSON(gihub.event)}}"
       - name: get code
