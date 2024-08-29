@@ -2,7 +2,13 @@ name: EVENT_DEMO
 on: 
   pull_request:
     types: [opened, closed]
+    branches:
+      - main
   workflow_dispatch:
+  # for filter check  workflow syntax
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
