@@ -8,7 +8,7 @@ jobs:
     runs_on: ubuntu-latest
     steps:
       - name: josn event
-        run: echo "run ${{toJSON(gihub.event)}}"
+        run: echo "run ${{toJSON(github.event)}}"
       - name: get code
         uses: actions/checkout@v4
       - name: installdependency
