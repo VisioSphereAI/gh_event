@@ -1,7 +1,8 @@
 name: EVENT_DEMO
 on: 
   pull_request:
-    types: [opened, closed]
+    types:
+      - opened
     branches:
       - main
   workflow_dispatch:
@@ -9,6 +10,8 @@ on:
   push:
     branches:
       - main
+      - 'dev-*' # add branches start with dev, dev-new, dev-test
+      - 'feat/**' # add feat/new, feat/test
 jobs:
   deploy:
     runs-on: ubuntu-latest
